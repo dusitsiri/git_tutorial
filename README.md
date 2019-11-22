@@ -35,3 +35,6 @@ git init
 ```
 
 ---
+
+## how to edit main branch without touch it directly.
+![edit branch without touching](https://raw.githubusercontent.com/dusitsiri/git_tutorial_command_line/master/how to edit main branch without touch it directly (friendly)/merge.png)
