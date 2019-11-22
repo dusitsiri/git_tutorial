@@ -1,0 +1,20 @@
+1.develop branch
+2.update code ex. dowork doreturningwork
+3.add testcase 
+4.commit
+5.postgres branch
+6.merge from develop [will be add testcase from develop]
+7.update sql syntax
+8.commit
+9.checkout to develop branch and repeat 1 to 8 again
+
+another solution
+1.develop branch 
+2.checkout new branch from develop branch ex. develop-test branch (create develop-test branch)
+3.edit everything in develop-test branch  
+4.checkout develop branch (switch branch to develop)
+5.merge --no-ff develop-test (merge develop-test branch to develop)
+6.git branch -d develop-test (delete develop-test branch)
+7.checkout postgres branch
+8.checkout to new branch from postgres branch ex. postgres-test branch 
+9.edit everything in postgres-test branch 

@@ -1,0 +1,50 @@
+after commit and push develop. Then
+1.git checkout feature/postgres
+	-ย้ายมา postgres ก่อน
+2.git checkout -b hotfix
+	-คำสั่งนี้จะทำการสร้าง branch hotfix ขึ้นมาโดยอ้างอิงโค้ดจาก branch postgres
+3.git pull origin develop หรือ กดคลิกขวาที่ branch develop ใน git kraken แล้วเลือก pull
+4.code conflict แน่ๆ
+	-ให้เปิด git kraken แล้วดูไฟล์ในส่วนของ Conflict files เปิดแล้วแก้ไขไปทีละไฟล์ โดยเลือกอันที่เหมาะสม 
+	เช่น ถ้ามีไฟล์นึงเป็น OracleTypes ส่วนอีกไฟล์นึงเป็น Types ควรเลือก Types
+	-บางไฟล์อาจจะไม่ได้ต่างกันตรงตามที่โปรแกรม highlight มาให้ ควรอ่านโค้ดให้ละเอียดก่อนเลือก
+	-จำไว้ว่าเรากำลังแก้เพื่อจะมาไปใส่ใน postgres แต่มาทำใน branch hotfix เฉยๆเพื่อกันไฟล์ใน postgres พัง
+5.อย่าลืมแก้ sql syntax เสร็จแล้ว commit ไว้แค่ใน local(เครื่องตัวเอง) ไม่ต้อง push ขึ้น
+6.git checout feature/postgres 
+	-ย้ายกลับมาที่ postgres ตัวจริงเพื่อจะทำการ merge จาก hotfix ที่เราเพิ่ง commit ไว้ใน local
+7.git merge --no-ff hotfix
+8.ตรวจสอบดูว่ามีไฟล์อะไร conflict ไหม โดยอาจจะทำตามข้อ 4
+	-เมื่อแก้เสร็จแล้วถ้าไม่มีอะไรผิดปกติก็ commit แล้ว push ขึ้น server ได้เลย
+9.git branch -d hotfix 
+	-ลบ branch hotfix ทิ้งเพราะใช้เสร็จแล้ว
+
+
+=========================================================================
+1.git checkout feature/postgres
+	-ย้ายมา postgres ก่อน
+2.git checkout -b hotfix
+	-คำสั่งนี้จะทำการสร้าง branch hotfix ขึ้นมาโดยอ้างอิงโค้ดจาก branch postgres
+3.git cherry-pick [commit-hash]
+	-จำได้ code ใน commit นั้นๆมา
+	-ใน gitkraken unstage ไฟล์  main ออกจาก stage files ก่อน แล้วนั่งดูโค้ดใน unstaged files
+	-ถ้าโอเคแล้วก็ Stage file เข้าไปทีละไฟล์ แล้ว commit
+4.ไม่มี
+5.อย่าลืมแก้ sql syntax เสร็จแล้ว commit ไว้แค่ใน local(เครื่องตัวเอง) ไม่ต้อง push ขึ้น
+6.git checout feature/postgres 
+	-ย้ายกลับมาที่ postgres ตัวจริงเพื่อจะทำการ merge จาก hotfix ที่เราเพิ่ง commit ไว้ใน local
+7.git merge --no-ff hotfix
+8.ตรวจสอบดูว่ามีไฟล์อะไร conflict ไหม โดยอาจจะทำตามข้อ 4
+	-เมื่อแก้เสร็จแล้วถ้าไม่มีอะไรผิดปกติก็ commit แล้ว push ขึ้น server ได้เลย
+9.git branch -d hotfix 
+	-ลบ branch hotfix ทิ้งเพราะใช้เสร็จแล้ว
+
+
+
+
+
+
+
+
+
+
+
