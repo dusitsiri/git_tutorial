@@ -36,5 +36,22 @@ git init
 
 ---
 
+## git remote 
+- ใช้ในการกำหนด remote directory ปลายทางของ project นอกจากนั้นแล้วยังสามารถเรียกดูได้ว่าทำการกำหนด remote ไปที่ไหนแล้วบ้าง โดยมีคำสั่งประมาณนี้
+```git remote add
+git remote add <remote-name> <url>
+$git remote add origin git@github.git
+```
+
+---
+
+## git cherry-pick
+- ใช้ในการเลือก commit ที่ต้องการเพื่อนำมา update หรือแก้ไข
+```git cherry-pick 
+git cherry-pick <commitSha> 
+```
+
+---
+
 ## how to edit main branch without touch it directly.
 ![edit branch without touching](https://github.com/dusitsiri/git_tutorial_command_line/blob/master/Edit_branch_without_touch_directly/merge.png)
