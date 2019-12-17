@@ -53,5 +53,11 @@ git cherry-pick <commitSha>
 
 ---
 
-## how to edit main branch without touch it directly.
+## How to edit main branch without touch it directly
 ![edit branch without touching](https://github.com/dusitsiri/git_tutorial_command_line/blob/master/Edit_branch_without_touch_directly/merge.png)
+
+
+## How to edit branch without touch it directly #2
+![edit branch without touch it](https://github.com/dusitsiri/git_tutorial_command_line/blob/master/Edit_branch_without_touch_directly/cherry_pick_1.png)
+
+![edit branch without touch it](https://github.com/dusitsiri/git_tutorial_command_line/blob/master/Edit_branch_without_touch_directly/cherry_pick_2.png)
