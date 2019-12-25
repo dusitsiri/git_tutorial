@@ -53,6 +53,9 @@ git cherry-pick <commitSha>
 
 ---
 
+## git revert commit 
+- ใช้ในการ roll back กลับไปที่ commit เก่า ๆ
+- โดยจะไปที่ก่อนเริ่มต้นการ commit อันดังกล่าว อธิบายง่าย ๆ คือ สมมติเรา roll back ไปที่ commit อันที่ 2 เราจะได้ผลลัพธ์ของการ commit จาก commit อันที่ 1 
 ## How to edit main branch without touch it directly
 ![edit branch without touching](https://github.com/dusitsiri/git_tutorial_command_line/blob/master/Edit_branch_without_touch_directly/merge.png)
 
